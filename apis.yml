@@ -1,7 +1,6 @@
 aid: carejobs-now
 name: CareJobs.Now
-description: 'CareJobs.Now is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'CareJobs.Now aggregates US healthcare job listings and posted pay rates from over 258 employers, providing open datasets of hourly wages, job types, and employer information. Users can browse jobs, explore pay research, and download JSON/CSV files without authentication. The platform aims to increase transparency in healthcare compensation and simplify job search for nurses, CNAs, therapists, and other care professionals.'
 url: https://raw.githubusercontent.com/api-evangelist/carejobs-now/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
@@ -11,7 +10,11 @@ specificationVersion: '0.20'
 created: '2026-10-15'
 modified: '2026-10-15'
 tags:
-- Company
+- Healthcare
+- Jobs
+- Data
+- Transparency
+- US
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,10 +22,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/carejobs-now-domain-security.yml
 - type: Website
   url: https://carejobs.now
 - type: Documentation
   url: https://carejobs.now/data
+- type: TermsOfService
+  url: https://carejobs.now/legal/terms
+- type: PrivacyPolicy
+  url: https://carejobs.now/legal/privacy
 x-submission-notes: Free no-key JSON/CSV (pay.json, roles.json) + MCP /api/mcp; US healthcare pay from
   170k jobs at 258 employers
 x-submission-probe: root 200, /data 200, pay.json 200 json, /openapi.json 404, soft-404 OK (404)
