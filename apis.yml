@@ -1,0 +1,29 @@
+aid: carejobs-now
+name: CareJobs.Now
+description: 'CareJobs.Now is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
+  and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/carejobs-now/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:new-submission
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-10-15'
+modified: '2026-10-15'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://carejobs.now
+- type: Documentation
+  url: https://carejobs.now/data
+x-submission-notes: Free no-key JSON/CSV (pay.json, roles.json) + MCP /api/mcp; US healthcare pay from
+  170k jobs at 258 employers
+x-submission-probe: root 200, /data 200, pay.json 200 json, /openapi.json 404, soft-404 OK (404)
+x-submitted-by: hello@carejobs.now (apis.io/add, 2026-10-15)
