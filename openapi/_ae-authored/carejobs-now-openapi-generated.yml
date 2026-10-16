@@ -1,0 +1,58 @@
+openapi: 3.1.0
+info:
+  title: CareJobs.Now API
+  version: '2026-10-15'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-15: 2 operation(s) read from 1 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; CareJobs.Now has published no machine-readable contract that
+    the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 2
+    documentation: 0
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-15'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://carejobs.now/data
+paths:
+  /pay.json:
+    get:
+      operationId: get_pay_json
+      tags:
+      - Pay
+      summary: GET /pay.json
+      x-source: https://carejobs.now/data
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: javascript
+        snippet: fetch("https://carejobs.now/pay.json")
+  /roles.json:
+    get:
+      operationId: get_roles_json
+      tags:
+      - Roles
+      summary: GET /roles.json
+      x-source: https://carejobs.now/data
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: 'curl https://carejobs.now/roles.json
+
+          const res = await fetch("https://carejobs.now/pay.json");
+
+          const { pay_by_work_type } = await res.json(); Report data Downloadable figures for each research report Each research report offers
+          its numbers as files as well: the full set or a single chart, current or as a locked monthly edition. Request them on that report''s
+          page and they go to your work email. Eac'
+tags:
+- name: Pay
+- name: Roles
