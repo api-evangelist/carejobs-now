@@ -71,17 +71,26 @@ apis:
   - type: MCP
     url: https://carejobs.now/api/mcp
   aid: carejobs-now:carejobs-now-mcp-api
-- aid: carejobs-now:carejobs-now-api
-  name: CareJobs.Now API
-  description: 'CareJobs.Now API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
-
-    not the provider''s own document.'
+- aid: carejobs-now:carejobs-now-pay-api
+  name: CareJobs.Now Pay API
+  description: The Pay API from CareJobs.Now — 1 operation(s) for pay.
   humanURL: https://carejobs.now/data
+  baseURL: https://api.carejobs.now
+  tags:
+  - Pay
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/carejobs-now-openapi-generated.yml
-    x-provenance: generated
-
+    url: openapi/carejobs-now-pay-api-openapi.yml
+- aid: carejobs-now:carejobs-now-roles-api
+  name: CareJobs.Now Roles API
+  description: The Roles API from CareJobs.Now — 1 operation(s) for roles.
+  humanURL: https://carejobs.now/data
+  baseURL: https://api.carejobs.now
+  tags:
+  - Roles
+  properties:
+  - type: OpenAPI
+    url: openapi/carejobs-now-roles-api-openapi.yml
 x-submission-notes: Free no-key JSON/CSV (pay.json, roles.json) + MCP /api/mcp; US healthcare pay from 170k jobs at 258 employers
 
 x-submission-probe: root 200, /data 200, pay.json 200 json, /openapi.json 404, soft-404 OK (404)
