@@ -64,5 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-CareJobs.Now is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://carejobs.now
+CareJobs.Now aggregates US healthcare job listings and posted pay rates from over 258 employers, providing open datasets of hourly wages, job types, and employer information. Users can browse jobs, explore pay research, and download JSON/CSV files without authentication. The platform aims to increase transparency in healthcare compensation and simplify job search for nurses, CNAs, therapists, and other care professionals.
+
+**Areas:** Healthcare · Job · Data · Transparency · US
+
+## CareJobs.Now on APIs.io
+
+Everything profiled for CareJobs.Now is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/carejobs-now/](https://apis.io/providers/carejobs-now/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [CareJobs.Now MCP API](https://apis.io/apis/carejobs-now/carejobs-now-mcp-api/) — Machine-readable API providing tools list and healthcare job data via JSON-RPC.
+- [CareJobs.Now Pay API](https://apis.io/apis/carejobs-now/carejobs-now-pay-api/) — The Pay API from CareJobs.Now — 1 operation(s) for pay.
+- [CareJobs.Now Roles API](https://apis.io/apis/carejobs-now/carejobs-now-roles-api/) — The Roles API from CareJobs.Now — 1 operation(s) for roles.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [CareJobs.Now API Rules](https://apis.io/rules/carejobs-now/carejobs-now-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Carejobs Now Domain Security](https://apis.io/security/carejobs-now/carejobs-now-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://carejobs.now)
+- [Documentation](https://carejobs.now/data)
+- [Getting started](https://carejobs.now/learn/how-hospital-hiring-works)
+- [Sign up](https://carejobs.now/occupations/registered-nurse)
+- [Terms of service](https://carejobs.now/legal/terms)
+- [Privacy policy](https://carejobs.now/legal/privacy)
+
+## API Evangelist rating
+
+**Kin Score 23.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 9.4 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 34.2 |
+
+**Agent readiness 15.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.8** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/carejobs-now/](https://apis.io/providers/carejobs-now/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CareJobs.Now: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/carejobs-now/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
